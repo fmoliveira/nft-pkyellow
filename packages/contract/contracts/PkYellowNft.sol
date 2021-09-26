@@ -17,14 +17,14 @@ contract PkYellowNft is ERC721URIStorage {
 	uint256 public publicIssued = 0;
 
 	string baseSvg =
-		'<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350"><style>.base { fill: black; font-family: sans-serif; font-size: 18px; } .bold { font-size: 20px; font-weight: bold; text-transform: uppercase; }</style><rect width="100%" height="100%" fill="white" stroke="';
+		'<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350"><style>.base { font-size: 18px; } .bold { font-weight: bold; text-transform: uppercase; }</style><rect width="100%" height="100%" fill="white" stroke="';
 	string moreSvg =
-		'" stroke-width="30" /><text x="50%" y="75%" class="base bold" dominant-baseline="middle" text-anchor="middle">';
+		'" stroke-width="30" /><text x="50%" y="70%" class="base bold" text-anchor="middle">Level ';
 	string levelSvg =
-		'</text><text x="50%" y="82%" class="base" dominant-baseline="middle" text-anchor="middle">';
+		'</text><text x="50%" y="78%" class="base" text-anchor="middle">';
 	string imageSvg = '</text><image href=" ';
 	string endSvg =
-		'" height="100" width="100" transform="translate(125,125)"/></svg>';
+		'" height="100" width="100" transform="translate(125,110)"/></svg>';
 
 	string[] starters = [
 		"Bulbasaur",
