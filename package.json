@@ -4,5 +4,18 @@
   "author": "Filipe Oliveira <hi@fmoliveira.dev>",
   "license": "MIT",
   "private": true,
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "npx husky install"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,json,sol}": "prettier --write"
+  },
+  "devDependencies": {
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.1"
+  }
 }
