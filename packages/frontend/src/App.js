@@ -17,6 +17,7 @@ export default function App() {
 		isRinkeby,
 		writeLoading,
 		connectWallet,
+		mintLimit,
 		mintNft,
 	} = useWallet();
 
@@ -35,6 +36,7 @@ export default function App() {
 						isRinkeby={isRinkeby}
 						connect={connectWallet}
 					/>
+					<MintLimit value={mintLimit} />
 					<MintButton
 						account={walletAccount}
 						mint={mintNft}
@@ -94,6 +96,21 @@ const Wallet = ({ account, networkName, isRinkeby, connect }) => {
 			{!isRinkeby && (
 				<div className="network networkInvalid">Please switch to Rinkeby</div>
 			)}
+		</div>
+	);
+};
+
+const MintLimit = ({ value }) => {
+	if (!value) {
+		return null;
+	}
+
+	return (
+		<div className="mint-limit">
+			<div className="limit-header">Minted:</div>
+			<div className="limit-value gradient-text">
+				{value.issued}/{value.max}
+			</div>
 		</div>
 	);
 };

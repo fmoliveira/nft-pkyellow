@@ -30,6 +30,8 @@ export default function useWallet() {
 	const [walletNetwork, setNetwork] = useState(null);
 	const [walletAccount, setAccount] = useState("");
 	const [walletError, setWalletError] = useState(null);
+	const [mintLimit, setMintLimit] = useState(null);
+
 	const networkName = useMemo(() => {
 		if (!walletNetwork) {
 			return "";
@@ -40,6 +42,10 @@ export default function useWallet() {
 
 	const isWindowFocused = useWindowFocus();
 
+	const updateValues = useCallback(async () => {
+		setMintLimit(await getMintLimit());
+	}, [setMintLimit]);
+
 	useEffect(() => {
 		if (isWindowFocused) {
 			// check status whenever the window focus status changes
@@ -48,10 +54,11 @@ export default function useWallet() {
 			setInstalled(getWalletInstalled());
 			setConnected(await getWalletConnected());
 			setNetwork(await getNetwork());
+			updateValues();
 			setLoading(false);
 		};
 		runUpdates();
-	}, [isWindowFocused, setInstalled, setConnected, setLoading]);
+	}, [isWindowFocused, setInstalled, setConnected, updateValues, setLoading]);
 
 	const connectWallet = () => {
 		return ethereum
@@ -83,6 +90,7 @@ export default function useWallet() {
 
 				await transaction.wait();
 				setWriteLoading(WriteStatus.None);
+				updateValues();
 			})
 			.catch((error) => {
 				window.alert("Failed to mint NFT!");
@@ -98,6 +106,7 @@ export default function useWallet() {
 		walletConnected,
 		walletAccount,
 		walletError,
+		mintLimit,
 		connectWallet,
 		networkName,
 		isRinkeby,
@@ -128,14 +137,28 @@ function getNetwork() {
 	return provider.getNetwork();
 }
 
+async function getMintLimit() {
+	const provider = new ethers.providers.Web3Provider(window.ethereum);
+	const contract = new ethers.Contract(
+		contractAddress,
+		wavePortalAbi.abi,
+		provider,
+	);
+
+	const issued = await contract.publicIssued();
+	const max = await contract.MAX_MINT();
+
+	return { issued: issued.toString(), max: max.toString() };
+}
+
 function mintPokemonNft() {
 	const provider = new ethers.providers.Web3Provider(window.ethereum);
 	const signer = provider.getSigner();
-	const wavePortalContract = new ethers.Contract(
+	const contract = new ethers.Contract(
 		contractAddress,
 		wavePortalAbi.abi,
 		signer,
 	);
 
-	return wavePortalContract.mintPokemon();
+	return contract.mintPokemon();
 }

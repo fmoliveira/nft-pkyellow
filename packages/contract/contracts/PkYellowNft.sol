@@ -13,7 +13,7 @@ contract PkYellowNft is ERC721URIStorage {
 
 	mapping(address => uint256) private _mintPerAddress;
 	uint256 public MAX_PER_ADDRESS = 2;
-	uint256 public MAX_MINT = 1000;
+	uint256 public MAX_MINT = 100;
 	uint256 public publicIssued = 0;
 
 	string baseSvg =
