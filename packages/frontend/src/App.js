@@ -1,19 +1,15 @@
 import React from "react";
 
 import twitterLogo from "./assets/twitter-logo.svg";
+import useWallet from "./hooks/useWallet";
 import "./styles/App.css";
 
 // Constants
 const OPENSEA_LINK = "";
 const TOTAL_MINT_COUNT = 50;
 
-const App = () => {
-  // Render Methods
-  const renderNotConnectedContainer = () => (
-    <button className="cta-button connect-wallet-button">
-      Connect to Wallet
-    </button>
-  );
+export default function App() {
+  const { walletAccount, connectWallet } = useWallet();
 
   return (
     <div className="App">
@@ -24,7 +20,7 @@ const App = () => {
           </div>
           <p className="header gradient-text">PK Yellow NFT</p>
           <p className="sub-text">Grab your starter Pokemon today.</p>
-          {renderNotConnectedContainer()}
+          <Wallet account={walletAccount} connect={connectWallet} />
         </div>
         <div className="footer-container footer-text">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
@@ -50,6 +46,24 @@ const App = () => {
       </div>
     </div>
   );
-};
+}
 
-export default App;
+const Wallet = ({ account, connect }) => {
+  if (!account) {
+    return (
+      <button className="cta-button connect-wallet-button" onClick={connect}>
+        Connect to Wallet
+      </button>
+    );
+  }
+
+  return (
+    <div className="wallet-connected">
+      <div>
+        <span className="green-dot" />
+        <span>Wallet Connected</span>
+      </div>
+      <div>{account}</div>
+    </div>
+  );
+};

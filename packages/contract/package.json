@@ -1,5 +1,5 @@
 {
-  "name": "pkyellow-contract",
+  "name": "@pkyellow/contract",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Filipe Oliveira <hi@fmoliveira.dev>",
