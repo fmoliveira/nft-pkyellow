@@ -17,7 +17,7 @@ contract PkYellowNft is ERC721URIStorage {
 	uint256 public publicIssued = 0;
 
 	string baseSvg =
-		'<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350"><style>.base { fill: black; font-family: serif; font-size: 14px; }</style><rect width="100%" height="100%" fill="white" stroke="';
+		'<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350"><style>.base { fill: black; font-family: sans-serif; font-size: 20px; font-weight: bold; text-transform: uppercase; }</style><rect width="100%" height="100%" fill="white" stroke="';
 	string moreSvg =
 		'" stroke-width="30" /><text x="50%" y="75%" class="base" dominant-baseline="middle" text-anchor="middle">';
 	string imageSvg = '</text><image href=" ';
