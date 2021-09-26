@@ -55,6 +55,7 @@
 }
 
 .wallet-connected {
+  margin: 2em;
   color: white;
   line-height: 1.5;
 }
