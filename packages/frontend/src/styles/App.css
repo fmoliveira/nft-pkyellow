@@ -48,6 +48,11 @@
   color: white;
 }
 
+.cta-button:disabled {
+  filter: grayscale(0.5);
+  cursor: not-allowed;
+}
+
 .connect-wallet-button {
   background: -webkit-linear-gradient(left, #e16939, #f3d77b);
   background-size: 200% 200%;
@@ -67,6 +72,24 @@
   height: 10px;
   border-radius: 100%;
   background-color: #34d399;
+}
+
+.network {
+  margin: 5px 0;
+}
+
+.networkName {
+  text-transform: capitalize;
+}
+
+.networkValid {
+  color: #6ee7b7;
+  font-weight: 500;
+}
+
+.networkInvalid {
+  color: #f87171;
+  font-weight: 500;
 }
 
 .mint-button {
