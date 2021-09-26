@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ethers } from "ethers";
 
-import wavePortalAbi from "@pkyellow/contract/artifacts/contracts/PkYellowNft.sol/PkYellowNft.json";
-import contractAddress from "@pkyellow/contract/contract-address.json";
+import wavePortalAbi from "@pkyellow/contract/rinkeby/abi.json";
+import contractAddress from "@pkyellow/contract/rinkeby/address.json";
 import useWindowFocus from "./useWindowFocus";
 
 export const WriteStatus = {

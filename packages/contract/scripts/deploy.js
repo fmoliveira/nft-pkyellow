@@ -1,4 +1,5 @@
 const fs = require("fs");
+const { exec } = require("child_process");
 
 async function deploy() {
 	const factory = await hre.ethers.getContractFactory("PkYellowNft");
@@ -7,6 +8,12 @@ async function deploy() {
 	console.log("Contract deployed to:", contract.address);
 
 	fs.writeFileSync("contract-address.json", JSON.stringify(contract.address));
+
+	exec("mkdir -p rinkeby");
+	exec("mv contract-address.json rinkeby/address.json");
+	exec(
+		"cp artifacts/contracts/PkYellowNft.sol/PkYellowNft.json rinkeby/abi.json",
+	);
 }
 
 async function main() {
