@@ -4,7 +4,6 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
-import "hardhat/console.sol";
 
 import "./libraries/Base64.sol";
 
@@ -41,6 +40,8 @@ contract PkYellowNft is ERC721URIStorage {
 		"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoAgMAAADxkFD+AAAADFBMVEXmcwD///8ZGRn//wBBN5LbAAABHElEQVQYGQXBIWtWURgA4LcsmCw7wbhgULC5HzDcHSoYPu95zt29n+AVOQMnKtq0DIRF49EsKzKzNqPgH7j7AcK6BsEi83niFoC4mwBi+ggQ998CRGkN8mmK3CryyZsUtvdfnd488UP4NiS9YUt4scDRsbDextFfQl7QHxMKFHLIE1NmCv1Bc/AheR7Gw+awNV/DamKSylnYTSXZ6dYlzBuI+qyEeWNzU9QvJeymR3fs7C0ljOCzEnoYbsghQ+6sQu/hP8MVNYyGP7zXwqhpUqthlZKU9tTQtS5rT6RQz2spy+MzoX6vJS9Pfwv1dZfX5nOhPmjemS8JHZivCivwswkjuEYoMDSCNlwsBcG9X3H5JYK25XZBcD3Jn/AfjxeR4e+jK5MAAAAASUVORK5CYII=",
 		"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoAgMAAADxkFD+AAAADFBMVEVaWin///8ZGRmlvVJYS6nPAAABW0lEQVQYlUXRsUtCcRAH8OuBoC0O8abaTAjbao1ni0PgkvrVzMLKbK2lLVIMmwKnH0FLVgjyoKWtSTMEy6GpPyBECBoUQyh4dt3TyN/04fjC3e+O8P/IO+b9H9YVGfpQkTNFqbchPV1FQcPWmnUNSrjtRMGXA4U9SpI90wWKftSBhK/sBUUa7VMVNIsKhLuvz6cFMyctsPTC1nPZFRDuM/MPlbaFIWa/NYldYaRjtXq32BNGp3imBwSUcJovhCoggXk2a4CeJoQ9PFdDFFJNcOGxihRWpcoWT6DyGpesddN1RdlmyM1kJLj/TQhsEV2eMAv1A/Mq2RlStbkfEz4QzvXMINZirhP8CoNYk9lLCG7iKOlkdhB2DnG8kWNZCQwHeoZmkU6ozGYaRY2cMnqlyVlNo7xw8b2c9dGV/flUKV4tZZXNkB5f/iOwouVz+ohpTZ/DiKHi6CzjY/0C4V+40iEcu6wAAAAASUVORK5CYII="
 	];
+
+	event NewMint(address indexed from, uint256 tokenId);
 
 	constructor() ERC721("PkYellowNft", "PKYELLOW") {}
 
@@ -80,12 +81,11 @@ contract PkYellowNft is ERC721URIStorage {
 			abi.encodePacked("data:application/json;base64,", json)
 		);
 
-		console.log("Minting", tokenUri);
-
 		_safeMint(msg.sender, newItemId);
 		_setTokenURI(newItemId, tokenUri);
 		_tokenIds.increment();
-		console.log("Minted a Pikachu NFT %s to %s", newItemId, msg.sender);
+
+		emit NewMint(msg.sender, newItemId);
 	}
 
 	function random(string memory input) internal pure returns (uint256) {
