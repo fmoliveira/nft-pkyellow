@@ -6,9 +6,6 @@ async function deploy() {
 
   let txn = await contract.mintPokemon();
   await txn.wait();
-
-  txn = await contract.mintPokemon();
-  await txn.wait();
 }
 
 async function main() {
