@@ -1,14 +1,14 @@
 import React from "react";
 import classNames from "classnames";
 
+import openSeaLogo from "./assets/opensea-logo.svg";
 import twitterLogo from "./assets/twitter-logo.svg";
 import useWallet from "./hooks/useWallet";
 import "./styles/spinner.css";
 import "./styles/App.css";
 
-// Constants
-const OPENSEA_LINK = "";
-const TOTAL_MINT_COUNT = 50;
+const OPENSEA_LINK =
+	"https://testnets.opensea.io/collection/pkyellownft-qgtx2pi3yp";
 
 export default function App() {
 	const {
@@ -30,6 +30,21 @@ export default function App() {
 					</div>
 					<p className="header gradient-text">PK Yellow NFT</p>
 					<p className="sub-text">Grab your starter Pokemon today.</p>
+					<div className="opensea-container">
+						<a
+							className="opensea-link"
+							href={OPENSEA_LINK}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img
+								alt="OpenSea Logo"
+								className="twitter-logo"
+								src={openSeaLogo}
+							/>
+							<span>View collection on OpenSea</span>
+						</a>
+					</div>
 					<Wallet
 						account={walletAccount}
 						networkName={networkName}
@@ -74,7 +89,7 @@ const Wallet = ({ account, networkName, isRinkeby, connect }) => {
 	if (!account) {
 		return (
 			<button className="cta-button connect-wallet-button" onClick={connect}>
-				Connect to Wallet
+				Connect Wallet
 			</button>
 		);
 	}
@@ -131,7 +146,6 @@ const MintButton = ({ account, mint, loading, disabled }) => {
 
 	return (
 		<button
-			onClick={null}
 			className="cta-button connect-wallet-button"
 			onClick={mint}
 			disabled={disabled}
