@@ -17,7 +17,9 @@ contract PkYellowNft is ERC721URIStorage {
 	uint256 public publicIssued = 0;
 
 	string baseSvg =
-		'<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350"><style>.base { fill: black; font-family: serif; font-size: 14px; }</style><rect width="100%" height="100%" fill="white" /><text x="50%" y="75%" class="base" dominant-baseline="middle" text-anchor="middle">';
+		'<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350"><style>.base { fill: black; font-family: serif; font-size: 14px; }</style><rect width="100%" height="100%" fill="white" stroke="';
+	string moreSvg =
+		'" stroke-width="30" /><text x="50%" y="75%" class="base" dominant-baseline="middle" text-anchor="middle">';
 	string imageSvg = '</text><image href=" ';
 	string endSvg =
 		'" height="100" width="100" transform="translate(125,125)"/></svg>';
@@ -29,6 +31,8 @@ contract PkYellowNft is ERC721URIStorage {
 		"Pikachu",
 		"Eevee"
 	];
+
+	string[] colors = ["#9BCC50", "#FD7D24", "#30A7D7", "#EED535", "#A4ACAF"];
 
 	string[] descriptions = [
 		"There is a plant seed on its back right from the day this Pokemon is born. The seed slowly grows larger.",
@@ -64,6 +68,8 @@ contract PkYellowNft is ERC721URIStorage {
 		string memory svg = string(
 			abi.encodePacked(
 				baseSvg,
+				colors[starterIndex],
+				moreSvg,
 				starters[starterIndex],
 				imageSvg,
 				images[starterIndex],
