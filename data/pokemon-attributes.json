@@ -1,0 +1,2498 @@
+[
+  {
+    "id": 1,
+    "name": "bulbasaur",
+    "types": ["grass", "poison"],
+    "moves": [
+      "razor-wind",
+      "swords-dance",
+      "cut",
+      "bind",
+      "vine-whip",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "ivysaur",
+    "types": ["grass", "poison"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "bind",
+      "vine-whip",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "growl"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "venusaur",
+    "types": ["grass", "poison"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "bind",
+      "vine-whip",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "growl"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "charmander",
+    "types": ["fire"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "thunder-punch",
+      "scratch",
+      "swords-dance",
+      "cut",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "charmeleon",
+    "types": ["fire"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "thunder-punch",
+      "scratch",
+      "swords-dance",
+      "cut",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "charizard",
+    "types": ["fire", "flying"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "thunder-punch",
+      "scratch",
+      "swords-dance",
+      "cut",
+      "wing-attack",
+      "fly",
+      "mega-kick",
+      "headbutt"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "squirtle",
+    "types": ["water"],
+    "moves": [
+      "mega-punch",
+      "ice-punch",
+      "mega-kick",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "wartortle",
+    "types": ["water"],
+    "moves": [
+      "mega-punch",
+      "ice-punch",
+      "mega-kick",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "blastoise",
+    "types": ["water"],
+    "moves": [
+      "mega-punch",
+      "ice-punch",
+      "mega-kick",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "caterpie",
+    "types": ["bug"],
+    "moves": ["tackle", "string-shot", "snore", "bug-bite", "electroweb"]
+  },
+  {
+    "id": 1,
+    "name": "metapod",
+    "types": ["bug"],
+    "moves": ["string-shot", "harden", "iron-defense", "bug-bite", "electroweb"]
+  },
+  {
+    "id": 1,
+    "name": "butterfree",
+    "types": ["bug", "flying"],
+    "moves": [
+      "razor-wind",
+      "gust",
+      "whirlwind",
+      "take-down",
+      "double-edge",
+      "supersonic",
+      "psybeam",
+      "hyper-beam",
+      "mega-drain",
+      "solar-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "weedle",
+    "types": ["bug", "poison"],
+    "moves": ["poison-sting", "string-shot", "bug-bite", "electroweb"]
+  },
+  {
+    "id": 1,
+    "name": "kakuna",
+    "types": ["bug", "poison"],
+    "moves": ["string-shot", "harden", "iron-defense", "bug-bite", "electroweb"]
+  },
+  {
+    "id": 1,
+    "name": "beedrill",
+    "types": ["bug", "poison"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "fury-attack",
+      "take-down",
+      "double-edge",
+      "twineedle",
+      "pin-missile",
+      "hyper-beam",
+      "mega-drain",
+      "solar-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "pidgey",
+    "types": ["normal", "flying"],
+    "moves": [
+      "razor-wind",
+      "gust",
+      "wing-attack",
+      "whirlwind",
+      "fly",
+      "sand-attack",
+      "tackle",
+      "take-down",
+      "double-edge",
+      "toxic"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "pidgeotto",
+    "types": ["normal", "flying"],
+    "moves": [
+      "razor-wind",
+      "gust",
+      "wing-attack",
+      "whirlwind",
+      "fly",
+      "sand-attack",
+      "tackle",
+      "take-down",
+      "double-edge",
+      "toxic"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "pidgeot",
+    "types": ["normal", "flying"],
+    "moves": [
+      "razor-wind",
+      "gust",
+      "wing-attack",
+      "whirlwind",
+      "fly",
+      "sand-attack",
+      "tackle",
+      "take-down",
+      "double-edge",
+      "hyper-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "rattata",
+    "types": ["normal"],
+    "moves": [
+      "cut",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite",
+      "water-gun",
+      "ice-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "raticate",
+    "types": ["normal"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite",
+      "roar"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "spearow",
+    "types": ["normal", "flying"],
+    "moves": [
+      "razor-wind",
+      "whirlwind",
+      "fly",
+      "fury-attack",
+      "take-down",
+      "double-edge",
+      "leer",
+      "growl",
+      "peck",
+      "drill-peck"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "fearow",
+    "types": ["normal", "flying"],
+    "moves": [
+      "razor-wind",
+      "whirlwind",
+      "fly",
+      "fury-attack",
+      "take-down",
+      "double-edge",
+      "leer",
+      "growl",
+      "hyper-beam",
+      "peck"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "ekans",
+    "types": ["poison"],
+    "moves": [
+      "bind",
+      "slam",
+      "headbutt",
+      "body-slam",
+      "wrap",
+      "take-down",
+      "double-edge",
+      "poison-sting",
+      "leer",
+      "bite"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "arbok",
+    "types": ["poison"],
+    "moves": [
+      "bind",
+      "headbutt",
+      "body-slam",
+      "wrap",
+      "take-down",
+      "double-edge",
+      "poison-sting",
+      "leer",
+      "bite",
+      "acid"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "pikachu",
+    "types": ["electric"],
+    "moves": [
+      "mega-punch",
+      "pay-day",
+      "thunder-punch",
+      "slam",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "raichu",
+    "types": ["electric"],
+    "moves": [
+      "mega-punch",
+      "pay-day",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "growl"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "sandshrew",
+    "types": ["ground"],
+    "moves": [
+      "scratch",
+      "swords-dance",
+      "cut",
+      "sand-attack",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "poison-sting",
+      "submission"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "sandslash",
+    "types": ["ground"],
+    "moves": [
+      "scratch",
+      "swords-dance",
+      "cut",
+      "sand-attack",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "poison-sting",
+      "hyper-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "nidoran-f",
+    "types": ["poison"],
+    "moves": [
+      "scratch",
+      "cut",
+      "double-kick",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "poison-sting"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "nidorina",
+    "types": ["poison"],
+    "moves": [
+      "scratch",
+      "cut",
+      "double-kick",
+      "headbutt",
+      "horn-drill",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "nidoqueen",
+    "types": ["poison", "ground"],
+    "moves": [
+      "mega-punch",
+      "pay-day",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "scratch",
+      "cut",
+      "double-kick",
+      "mega-kick",
+      "headbutt"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "nidoran-m",
+    "types": ["poison"],
+    "moves": [
+      "cut",
+      "double-kick",
+      "headbutt",
+      "horn-attack",
+      "fury-attack",
+      "horn-drill",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "nidorino",
+    "types": ["poison"],
+    "moves": [
+      "cut",
+      "double-kick",
+      "headbutt",
+      "horn-attack",
+      "fury-attack",
+      "horn-drill",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "nidoking",
+    "types": ["poison", "ground"],
+    "moves": [
+      "mega-punch",
+      "pay-day",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "cut",
+      "double-kick",
+      "mega-kick",
+      "headbutt",
+      "horn-attack"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "clefairy",
+    "types": ["fairy"],
+    "moves": [
+      "pound",
+      "double-slap",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "clefable",
+    "types": ["fairy"],
+    "moves": [
+      "double-slap",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "vulpix",
+    "types": ["fire"],
+    "moves": [
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "roar",
+      "disable",
+      "ember",
+      "flamethrower",
+      "fire-spin"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "ninetales",
+    "types": ["fire"],
+    "moves": [
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "roar",
+      "ember",
+      "flamethrower",
+      "hyper-beam",
+      "solar-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "jigglypuff",
+    "types": ["normal", "fairy"],
+    "moves": [
+      "pound",
+      "double-slap",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "wigglytuff",
+    "types": ["normal", "fairy"],
+    "moves": [
+      "double-slap",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "zubat",
+    "types": ["poison", "flying"],
+    "moves": [
+      "razor-wind",
+      "gust",
+      "wing-attack",
+      "whirlwind",
+      "fly",
+      "take-down",
+      "double-edge",
+      "bite",
+      "supersonic",
+      "absorb"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "golbat",
+    "types": ["poison", "flying"],
+    "moves": [
+      "razor-wind",
+      "wing-attack",
+      "whirlwind",
+      "fly",
+      "take-down",
+      "double-edge",
+      "bite",
+      "supersonic",
+      "hyper-beam",
+      "absorb"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "oddish",
+    "types": ["grass", "poison"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "take-down",
+      "double-edge",
+      "acid",
+      "absorb",
+      "mega-drain",
+      "growth",
+      "razor-leaf",
+      "solar-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "gloom",
+    "types": ["grass", "poison"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "take-down",
+      "double-edge",
+      "acid",
+      "absorb",
+      "mega-drain",
+      "growth",
+      "solar-beam",
+      "poison-powder"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "vileplume",
+    "types": ["grass", "poison"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "acid",
+      "hyper-beam",
+      "absorb",
+      "mega-drain",
+      "solar-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "paras",
+    "types": ["bug", "grass"],
+    "moves": [
+      "scratch",
+      "swords-dance",
+      "cut",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "psybeam",
+      "counter",
+      "absorb",
+      "mega-drain"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "parasect",
+    "types": ["bug", "grass"],
+    "moves": [
+      "scratch",
+      "swords-dance",
+      "cut",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "hyper-beam",
+      "counter",
+      "absorb",
+      "mega-drain"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "venonat",
+    "types": ["bug", "poison"],
+    "moves": [
+      "tackle",
+      "take-down",
+      "double-edge",
+      "supersonic",
+      "disable",
+      "psybeam",
+      "mega-drain",
+      "solar-beam",
+      "poison-powder",
+      "stun-spore"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "venomoth",
+    "types": ["bug", "poison"],
+    "moves": [
+      "razor-wind",
+      "gust",
+      "whirlwind",
+      "tackle",
+      "take-down",
+      "double-edge",
+      "supersonic",
+      "disable",
+      "psybeam",
+      "hyper-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "diglett",
+    "types": ["ground"],
+    "moves": [
+      "scratch",
+      "cut",
+      "sand-attack",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "growl",
+      "earthquake",
+      "fissure"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "dugtrio",
+    "types": ["ground"],
+    "moves": [
+      "scratch",
+      "cut",
+      "sand-attack",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "growl",
+      "hyper-beam",
+      "earthquake",
+      "fissure"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "meowth",
+    "types": ["normal"],
+    "moves": [
+      "pay-day",
+      "scratch",
+      "cut",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite",
+      "growl"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "persian",
+    "types": ["normal"],
+    "moves": [
+      "pay-day",
+      "scratch",
+      "cut",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "bite",
+      "growl",
+      "roar"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "psyduck",
+    "types": ["water"],
+    "moves": [
+      "mega-punch",
+      "pay-day",
+      "ice-punch",
+      "scratch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "golduck",
+    "types": ["water"],
+    "moves": [
+      "mega-punch",
+      "pay-day",
+      "ice-punch",
+      "scratch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "mankey",
+    "types": ["fighting"],
+    "moves": [
+      "karate-chop",
+      "mega-punch",
+      "pay-day",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "scratch",
+      "mega-kick",
+      "headbutt",
+      "body-slam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "primeape",
+    "types": ["fighting"],
+    "moves": [
+      "karate-chop",
+      "mega-punch",
+      "pay-day",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "scratch",
+      "mega-kick",
+      "headbutt",
+      "body-slam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "growlithe",
+    "types": ["fire"],
+    "moves": [
+      "double-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "thrash",
+      "double-edge",
+      "leer",
+      "bite",
+      "roar",
+      "ember"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "arcanine",
+    "types": ["fire"],
+    "moves": [
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "leer",
+      "bite",
+      "roar",
+      "ember",
+      "flamethrower",
+      "hyper-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "poliwag",
+    "types": ["water"],
+    "moves": [
+      "double-slap",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "mist",
+      "water-gun",
+      "hydro-pump",
+      "surf",
+      "ice-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "poliwhirl",
+    "types": ["water"],
+    "moves": [
+      "double-slap",
+      "mega-punch",
+      "ice-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "water-gun",
+      "hydro-pump"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "poliwrath",
+    "types": ["water", "fighting"],
+    "moves": [
+      "double-slap",
+      "mega-punch",
+      "ice-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "water-gun",
+      "surf"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "abra",
+    "types": ["psychic"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "submission"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "kadabra",
+    "types": ["psychic"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "disable"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "alakazam",
+    "types": ["psychic"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "disable"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "machop",
+    "types": ["fighting"],
+    "moves": [
+      "karate-chop",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "rolling-kick",
+      "headbutt",
+      "body-slam",
+      "take-down"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "machoke",
+    "types": ["fighting"],
+    "moves": [
+      "karate-chop",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "machamp",
+    "types": ["fighting"],
+    "moves": [
+      "karate-chop",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "bellsprout",
+    "types": ["grass", "poison"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "bind",
+      "slam",
+      "vine-whip",
+      "wrap",
+      "take-down",
+      "double-edge",
+      "acid",
+      "mega-drain"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "weepinbell",
+    "types": ["grass", "poison"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "bind",
+      "slam",
+      "vine-whip",
+      "wrap",
+      "take-down",
+      "double-edge",
+      "acid",
+      "mega-drain"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "victreebel",
+    "types": ["grass", "poison"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "bind",
+      "vine-whip",
+      "body-slam",
+      "wrap",
+      "take-down",
+      "double-edge",
+      "acid",
+      "hyper-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "tentacool",
+    "types": ["water", "poison"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "bind",
+      "wrap",
+      "take-down",
+      "double-edge",
+      "poison-sting",
+      "supersonic",
+      "acid",
+      "water-gun"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "tentacruel",
+    "types": ["water", "poison"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "bind",
+      "wrap",
+      "take-down",
+      "double-edge",
+      "poison-sting",
+      "supersonic",
+      "acid",
+      "water-gun"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "geodude",
+    "types": ["rock", "ground"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "thunder-punch",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "flamethrower",
+      "submission"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "graveler",
+    "types": ["rock", "ground"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "thunder-punch",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "flamethrower",
+      "submission"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "golem",
+    "types": ["rock", "ground"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "roar"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "ponyta",
+    "types": ["fire"],
+    "moves": [
+      "stomp",
+      "double-kick",
+      "headbutt",
+      "horn-drill",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "thrash",
+      "double-edge",
+      "tail-whip"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "rapidash",
+    "types": ["fire"],
+    "moves": [
+      "stomp",
+      "headbutt",
+      "fury-attack",
+      "horn-drill",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "growl"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "slowpoke",
+    "types": ["water", "psychic"],
+    "moves": [
+      "pay-day",
+      "stomp",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "growl",
+      "disable",
+      "flamethrower"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "slowbro",
+    "types": ["water", "psychic"],
+    "moves": [
+      "mega-punch",
+      "pay-day",
+      "ice-punch",
+      "mega-kick",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "growl"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "magnemite",
+    "types": ["electric", "steel"],
+    "moves": [
+      "tackle",
+      "take-down",
+      "double-edge",
+      "supersonic",
+      "sonic-boom",
+      "thunder-shock",
+      "thunderbolt",
+      "thunder-wave",
+      "thunder",
+      "toxic"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "magneton",
+    "types": ["electric", "steel"],
+    "moves": [
+      "tackle",
+      "take-down",
+      "double-edge",
+      "supersonic",
+      "sonic-boom",
+      "hyper-beam",
+      "thunder-shock",
+      "thunderbolt",
+      "thunder-wave",
+      "thunder"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "farfetchd",
+    "types": ["normal", "flying"],
+    "moves": [
+      "razor-wind",
+      "swords-dance",
+      "cut",
+      "gust",
+      "whirlwind",
+      "fly",
+      "sand-attack",
+      "headbutt",
+      "fury-attack",
+      "body-slam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "doduo",
+    "types": ["normal", "flying"],
+    "moves": [
+      "swords-dance",
+      "whirlwind",
+      "fly",
+      "jump-kick",
+      "fury-attack",
+      "body-slam",
+      "take-down",
+      "thrash",
+      "double-edge",
+      "growl"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "dodrio",
+    "types": ["normal", "flying"],
+    "moves": [
+      "swords-dance",
+      "whirlwind",
+      "fly",
+      "jump-kick",
+      "fury-attack",
+      "body-slam",
+      "take-down",
+      "thrash",
+      "double-edge",
+      "growl"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "seel",
+    "types": ["water"],
+    "moves": [
+      "pay-day",
+      "slam",
+      "headbutt",
+      "horn-drill",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "growl",
+      "disable",
+      "water-gun"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "dewgong",
+    "types": ["water", "ice"],
+    "moves": [
+      "pay-day",
+      "headbutt",
+      "horn-drill",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "growl",
+      "water-gun",
+      "surf",
+      "ice-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "grimer",
+    "types": ["poison"],
+    "moves": [
+      "pound",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "body-slam",
+      "disable",
+      "flamethrower",
+      "strength",
+      "mega-drain",
+      "thunderbolt"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "muk",
+    "types": ["poison"],
+    "moves": [
+      "pound",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "body-slam",
+      "disable",
+      "flamethrower",
+      "hyper-beam",
+      "strength",
+      "mega-drain"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "shellder",
+    "types": ["water"],
+    "moves": [
+      "tackle",
+      "take-down",
+      "double-edge",
+      "twineedle",
+      "leer",
+      "supersonic",
+      "water-gun",
+      "hydro-pump",
+      "surf",
+      "ice-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "cloyster",
+    "types": ["water", "ice"],
+    "moves": [
+      "take-down",
+      "double-edge",
+      "supersonic",
+      "water-gun",
+      "hydro-pump",
+      "surf",
+      "ice-beam",
+      "blizzard",
+      "bubble-beam",
+      "aurora-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "gastly",
+    "types": ["ghost", "poison"],
+    "moves": [
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "disable",
+      "mega-drain",
+      "thunderbolt",
+      "thunder",
+      "toxic",
+      "psychic",
+      "hypnosis"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "haunter",
+    "types": ["ghost", "poison"],
+    "moves": [
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-drain",
+      "thunderbolt",
+      "thunder",
+      "toxic",
+      "psychic",
+      "hypnosis",
+      "rage"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "gengar",
+    "types": ["ghost", "poison"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "hyper-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "onix",
+    "types": ["rock", "ground"],
+    "moves": [
+      "bind",
+      "slam",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "roar",
+      "strength",
+      "rock-throw"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "drowzee",
+    "types": ["psychic"],
+    "moves": [
+      "pound",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "hypno",
+    "types": ["psychic"],
+    "moves": [
+      "pound",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "krabby",
+    "types": ["water"],
+    "moves": [
+      "vise-grip",
+      "guillotine",
+      "swords-dance",
+      "cut",
+      "slam",
+      "stomp",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "leer"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "kingler",
+    "types": ["water"],
+    "moves": [
+      "vise-grip",
+      "guillotine",
+      "swords-dance",
+      "cut",
+      "slam",
+      "stomp",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "leer"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "voltorb",
+    "types": ["electric"],
+    "moves": [
+      "headbutt",
+      "tackle",
+      "take-down",
+      "sonic-boom",
+      "thunderbolt",
+      "thunder-wave",
+      "thunder",
+      "toxic",
+      "rage",
+      "teleport"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "electrode",
+    "types": ["electric"],
+    "moves": [
+      "headbutt",
+      "tackle",
+      "take-down",
+      "sonic-boom",
+      "hyper-beam",
+      "thunderbolt",
+      "thunder-wave",
+      "thunder",
+      "toxic",
+      "rage"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "exeggcute",
+    "types": ["grass", "psychic"],
+    "moves": [
+      "swords-dance",
+      "take-down",
+      "double-edge",
+      "strength",
+      "mega-drain",
+      "leech-seed",
+      "solar-beam",
+      "poison-powder",
+      "stun-spore",
+      "sleep-powder"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "exeggutor",
+    "types": ["grass", "psychic"],
+    "moves": [
+      "swords-dance",
+      "stomp",
+      "headbutt",
+      "take-down",
+      "double-edge",
+      "hyper-beam",
+      "low-kick",
+      "strength",
+      "mega-drain",
+      "solar-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "cubone",
+    "types": ["ground"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "thunder-punch",
+      "swords-dance",
+      "double-kick",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "thrash"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "marowak",
+    "types": ["ground"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "thunder-punch",
+      "swords-dance",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "thrash",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "hitmonlee",
+    "types": ["fighting"],
+    "moves": [
+      "mega-punch",
+      "double-kick",
+      "mega-kick",
+      "jump-kick",
+      "rolling-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "submission"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "hitmonchan",
+    "types": ["fighting"],
+    "moves": [
+      "comet-punch",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "lickitung",
+    "types": ["normal"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "swords-dance",
+      "cut",
+      "bind",
+      "slam",
+      "stomp",
+      "mega-kick"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "koffing",
+    "types": ["poison"],
+    "moves": [
+      "tackle",
+      "flamethrower",
+      "psybeam",
+      "thunderbolt",
+      "thunder",
+      "toxic",
+      "rage",
+      "mimic",
+      "screech",
+      "double-team"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "weezing",
+    "types": ["poison"],
+    "moves": [
+      "tackle",
+      "flamethrower",
+      "hyper-beam",
+      "thunderbolt",
+      "thunder",
+      "toxic",
+      "rage",
+      "mimic",
+      "double-team",
+      "smokescreen"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "rhyhorn",
+    "types": ["ground", "rock"],
+    "moves": [
+      "swords-dance",
+      "stomp",
+      "headbutt",
+      "horn-attack",
+      "fury-attack",
+      "horn-drill",
+      "body-slam",
+      "take-down",
+      "thrash",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "rhydon",
+    "types": ["ground", "rock"],
+    "moves": [
+      "mega-punch",
+      "pay-day",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "swords-dance",
+      "cut",
+      "stomp",
+      "mega-kick",
+      "headbutt"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "chansey",
+    "types": ["normal"],
+    "moves": [
+      "pound",
+      "double-slap",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "tangela",
+    "types": ["grass"],
+    "moves": [
+      "swords-dance",
+      "cut",
+      "bind",
+      "slam",
+      "vine-whip",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "hyper-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "kangaskhan",
+    "types": ["normal"],
+    "moves": [
+      "comet-punch",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "cut",
+      "stomp",
+      "mega-kick",
+      "headbutt",
+      "body-slam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "horsea",
+    "types": ["water"],
+    "moves": [
+      "razor-wind",
+      "headbutt",
+      "take-down",
+      "double-edge",
+      "leer",
+      "disable",
+      "water-gun",
+      "hydro-pump",
+      "surf",
+      "ice-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "seadra",
+    "types": ["water"],
+    "moves": [
+      "headbutt",
+      "take-down",
+      "double-edge",
+      "leer",
+      "water-gun",
+      "hydro-pump",
+      "surf",
+      "ice-beam",
+      "blizzard",
+      "bubble-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "goldeen",
+    "types": ["water"],
+    "moves": [
+      "horn-attack",
+      "fury-attack",
+      "horn-drill",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "supersonic",
+      "water-gun",
+      "hydro-pump"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "seaking",
+    "types": ["water"],
+    "moves": [
+      "horn-attack",
+      "fury-attack",
+      "horn-drill",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "supersonic",
+      "water-gun",
+      "surf",
+      "ice-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "staryu",
+    "types": ["water"],
+    "moves": [
+      "tackle",
+      "take-down",
+      "double-edge",
+      "supersonic",
+      "water-gun",
+      "hydro-pump",
+      "surf",
+      "ice-beam",
+      "blizzard",
+      "bubble-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "starmie",
+    "types": ["water", "psychic"],
+    "moves": [
+      "tackle",
+      "take-down",
+      "double-edge",
+      "water-gun",
+      "hydro-pump",
+      "surf",
+      "ice-beam",
+      "blizzard",
+      "bubble-beam",
+      "hyper-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "mr-mime",
+    "types": ["psychic", "fairy"],
+    "moves": [
+      "pound",
+      "double-slap",
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "scyther",
+    "types": ["bug", "flying"],
+    "moves": [
+      "razor-wind",
+      "swords-dance",
+      "cut",
+      "wing-attack",
+      "headbutt",
+      "take-down",
+      "double-edge",
+      "leer",
+      "hyper-beam",
+      "counter"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "jynx",
+    "types": ["ice", "psychic"],
+    "moves": [
+      "pound",
+      "double-slap",
+      "mega-punch",
+      "ice-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "thrash",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "electabuzz",
+    "types": ["electric"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "leer"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "magmar",
+    "types": ["fire"],
+    "moves": [
+      "mega-punch",
+      "fire-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "leer",
+      "ember"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "pinsir",
+    "types": ["bug"],
+    "moves": [
+      "vise-grip",
+      "guillotine",
+      "swords-dance",
+      "cut",
+      "bind",
+      "headbutt",
+      "fury-attack",
+      "body-slam",
+      "take-down",
+      "thrash"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "tauros",
+    "types": ["normal"],
+    "moves": [
+      "stomp",
+      "headbutt",
+      "horn-attack",
+      "horn-drill",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "thrash",
+      "double-edge",
+      "tail-whip"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "magikarp",
+    "types": ["water"],
+    "moves": ["tackle", "splash", "flail", "bounce"]
+  },
+  {
+    "id": 1,
+    "name": "gyarados",
+    "types": ["water", "flying"],
+    "moves": [
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "thrash",
+      "double-edge",
+      "leer",
+      "bite",
+      "roar",
+      "flamethrower"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "lapras",
+    "types": ["water", "ice"],
+    "moves": [
+      "headbutt",
+      "horn-drill",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "growl",
+      "roar",
+      "sing",
+      "mist",
+      "water-gun"
+    ]
+  },
+  { "id": 1, "name": "ditto", "types": ["normal"], "moves": ["transform"] },
+  {
+    "id": 1,
+    "name": "eevee",
+    "types": ["normal"],
+    "moves": [
+      "sand-attack",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite",
+      "growl",
+      "dig"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "vaporeon",
+    "types": ["water"],
+    "moves": [
+      "sand-attack",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "bite",
+      "roar",
+      "mist"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "jolteon",
+    "types": ["electric"],
+    "moves": [
+      "double-kick",
+      "sand-attack",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "pin-missile",
+      "roar"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "flareon",
+    "types": ["fire"],
+    "moves": [
+      "sand-attack",
+      "headbutt",
+      "tackle",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "tail-whip",
+      "leer",
+      "bite",
+      "roar"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "porygon",
+    "types": ["normal"],
+    "moves": [
+      "tackle",
+      "take-down",
+      "double-edge",
+      "ice-beam",
+      "blizzard",
+      "psybeam",
+      "hyper-beam",
+      "solar-beam",
+      "thunderbolt",
+      "thunder-wave"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "omanyte",
+    "types": ["rock", "water"],
+    "moves": [
+      "bind",
+      "slam",
+      "headbutt",
+      "horn-attack",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "leer",
+      "bite",
+      "supersonic"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "omastar",
+    "types": ["rock", "water"],
+    "moves": [
+      "bind",
+      "headbutt",
+      "horn-attack",
+      "horn-drill",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "leer",
+      "bite",
+      "water-gun"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "kabuto",
+    "types": ["rock", "water"],
+    "moves": [
+      "scratch",
+      "sand-attack",
+      "body-slam",
+      "take-down",
+      "double-edge",
+      "leer",
+      "water-gun",
+      "hydro-pump",
+      "surf",
+      "ice-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "kabutops",
+    "types": ["rock", "water"],
+    "moves": [
+      "scratch",
+      "razor-wind",
+      "swords-dance",
+      "cut",
+      "mega-kick",
+      "sand-attack",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "aerodactyl",
+    "types": ["rock", "flying"],
+    "moves": [
+      "razor-wind",
+      "wing-attack",
+      "whirlwind",
+      "fly",
+      "headbutt",
+      "take-down",
+      "double-edge",
+      "bite",
+      "roar",
+      "supersonic"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "snorlax",
+    "types": ["normal"],
+    "moves": [
+      "mega-punch",
+      "pay-day",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "whirlwind",
+      "mega-kick",
+      "headbutt",
+      "tackle",
+      "body-slam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "articuno",
+    "types": ["ice", "flying"],
+    "moves": [
+      "razor-wind",
+      "gust",
+      "whirlwind",
+      "fly",
+      "take-down",
+      "double-edge",
+      "roar",
+      "mist",
+      "water-gun",
+      "ice-beam"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "zapdos",
+    "types": ["electric", "flying"],
+    "moves": [
+      "razor-wind",
+      "whirlwind",
+      "fly",
+      "take-down",
+      "double-edge",
+      "roar",
+      "hyper-beam",
+      "peck",
+      "drill-peck",
+      "thunder-shock"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "moltres",
+    "types": ["fire", "flying"],
+    "moves": [
+      "razor-wind",
+      "wing-attack",
+      "whirlwind",
+      "fly",
+      "take-down",
+      "double-edge",
+      "leer",
+      "roar",
+      "ember",
+      "flamethrower"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "dratini",
+    "types": ["dragon"],
+    "moves": [
+      "bind",
+      "slam",
+      "headbutt",
+      "body-slam",
+      "wrap",
+      "take-down",
+      "double-edge",
+      "leer",
+      "supersonic",
+      "flamethrower"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "dragonair",
+    "types": ["dragon"],
+    "moves": [
+      "bind",
+      "slam",
+      "headbutt",
+      "horn-drill",
+      "body-slam",
+      "wrap",
+      "take-down",
+      "double-edge",
+      "leer",
+      "flamethrower"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "dragonite",
+    "types": ["dragon", "flying"],
+    "moves": [
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "razor-wind",
+      "cut",
+      "wing-attack",
+      "fly",
+      "bind",
+      "slam",
+      "headbutt"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "mewtwo",
+    "types": ["psychic"],
+    "moves": [
+      "mega-punch",
+      "pay-day",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "mega-kick",
+      "headbutt",
+      "body-slam",
+      "take-down",
+      "double-edge"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "mew",
+    "types": ["psychic"],
+    "moves": [
+      "pound",
+      "mega-punch",
+      "pay-day",
+      "fire-punch",
+      "ice-punch",
+      "thunder-punch",
+      "razor-wind",
+      "swords-dance",
+      "cut",
+      "whirlwind"
+    ]
+  }
+]

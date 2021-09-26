@@ -1,0 +1,11 @@
+{
+  "name": "nft-pkyellow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Filipe Oliveira <hi@fmoliveira.dev>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "node-fetch": "^3.0.0"
+  }
+}
