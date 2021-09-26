@@ -11,6 +11,11 @@ contract PkYellowNft is ERC721URIStorage {
 	using Counters for Counters.Counter;
 	Counters.Counter private _tokenIds;
 
+	mapping(address => uint256) private _mintPerAddress;
+	uint256 public MAX_PER_ADDRESS = 2;
+	uint256 public MAX_MINT = 1000;
+	uint256 public publicIssued = 0;
+
 	string baseSvg =
 		'<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350"><style>.base { fill: black; font-family: serif; font-size: 14px; }</style><rect width="100%" height="100%" fill="white" /><text x="50%" y="75%" class="base" dominant-baseline="middle" text-anchor="middle">';
 	string imageSvg = '</text><image href=" ';
@@ -46,6 +51,12 @@ contract PkYellowNft is ERC721URIStorage {
 	constructor() ERC721("PkYellowNft", "PKYELLOW") {}
 
 	function mintPokemon() public {
+		require(
+			_mintPerAddress[msg.sender] < MAX_PER_ADDRESS,
+			"You have reached your minting limit."
+		);
+		require(publicIssued < MAX_MINT, "There are no more NFTs for minting.");
+
 		uint256 newItemId = _tokenIds.current();
 
 		uint256 starterIndex = pickStarterPokemon(newItemId);
@@ -80,6 +91,9 @@ contract PkYellowNft is ERC721URIStorage {
 		string memory tokenUri = string(
 			abi.encodePacked("data:application/json;base64,", json)
 		);
+
+		_mintPerAddress[msg.sender] += 1;
+		publicIssued += 1;
 
 		_safeMint(msg.sender, newItemId);
 		_setTokenURI(newItemId, tokenUri);
