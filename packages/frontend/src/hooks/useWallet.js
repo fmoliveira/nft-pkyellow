@@ -2,9 +2,8 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { ethers } from "ethers";
 
 import wavePortalAbi from "@pkyellow/contract/artifacts/contracts/PkYellowNft.sol/PkYellowNft.json";
+import contractAddress from "@pkyellow/contract/contract-address.json";
 import useWindowFocus from "./useWindowFocus";
-
-const RINKEBY_CONTRACT_ADDRESS = "0x5f02257be75dc68c08bb0923a87b42956576f939";
 
 export const WriteStatus = {
 	None: 0,
@@ -94,6 +93,7 @@ export default function useWallet() {
 
 	return {
 		loading,
+		writeLoading: writeLoading !== WriteStatus.None,
 		walletInstalled,
 		walletConnected,
 		walletAccount,
@@ -132,7 +132,7 @@ function mintPokemonNft() {
 	const provider = new ethers.providers.Web3Provider(window.ethereum);
 	const signer = provider.getSigner();
 	const wavePortalContract = new ethers.Contract(
-		RINKEBY_CONTRACT_ADDRESS,
+		contractAddress,
 		wavePortalAbi.abi,
 		signer,
 	);

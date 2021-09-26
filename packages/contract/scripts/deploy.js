@@ -1,17 +1,12 @@
+const fs = require("fs");
+
 async function deploy() {
 	const factory = await hre.ethers.getContractFactory("PkYellowNft");
 	const contract = await factory.deploy();
 	await contract.deployed();
 	console.log("Contract deployed to:", contract.address);
 
-	let txn = await contract.mintPokemon();
-	await txn.wait();
-
-	txn = await contract.mintPokemon();
-	await txn.wait();
-
-	txn = await contract.mintPokemon();
-	await txn.wait();
+	fs.writeFileSync("contract-address.json", JSON.stringify(contract.address));
 }
 
 async function main() {

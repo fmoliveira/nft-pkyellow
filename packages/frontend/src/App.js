@@ -3,6 +3,7 @@ import classNames from "classnames";
 
 import twitterLogo from "./assets/twitter-logo.svg";
 import useWallet from "./hooks/useWallet";
+import "./styles/spinner.css";
 import "./styles/App.css";
 
 // Constants
@@ -10,8 +11,14 @@ const OPENSEA_LINK = "";
 const TOTAL_MINT_COUNT = 50;
 
 export default function App() {
-	const { walletAccount, networkName, isRinkeby, connectWallet, mintNft } =
-		useWallet();
+	const {
+		walletAccount,
+		networkName,
+		isRinkeby,
+		writeLoading,
+		connectWallet,
+		mintNft,
+	} = useWallet();
 
 	return (
 		<div className="App">
@@ -31,6 +38,7 @@ export default function App() {
 					<MintButton
 						account={walletAccount}
 						mint={mintNft}
+						loading={writeLoading}
 						disabled={!isRinkeby}
 					/>
 				</div>
@@ -90,9 +98,18 @@ const Wallet = ({ account, networkName, isRinkeby, connect }) => {
 	);
 };
 
-const MintButton = ({ account, mint, disabled }) => {
+const MintButton = ({ account, mint, loading, disabled }) => {
 	if (!account) {
 		return null;
+	}
+
+	if (loading) {
+		return (
+			<div className="gradient-text">
+				<Spinner />
+				<div>Minting...</div>
+			</div>
+		);
 	}
 
 	return (
@@ -106,3 +123,14 @@ const MintButton = ({ account, mint, disabled }) => {
 		</button>
 	);
 };
+
+function Spinner() {
+	return (
+		<div className="lds-ellipsis">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	);
+}
