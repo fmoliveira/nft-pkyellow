@@ -132,7 +132,7 @@ contract PkYellowNft is ERC721URIStorage {
 			string(
 				abi.encodePacked(
 					"STARTER",
-					block.timestamp,
+					block.timestamp, // NOTE: take care with sources of randomness in contracts you'll deploy to mainnet, read details on https://solidity-by-example.org/hacks/randomness/
 					Strings.toString(tokenId)
 				)
 			)
@@ -145,7 +145,7 @@ contract PkYellowNft is ERC721URIStorage {
 			string(
 				abi.encodePacked(
 					"LEVEL",
-					block.timestamp,
+					block.timestamp, // NOTE: take care with sources of randomness in contracts you'll deploy to mainnet, read details on https://solidity-by-example.org/hacks/randomness/
 					Strings.toString(tokenId)
 				)
 			)
