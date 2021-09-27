@@ -4,6 +4,7 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
+import "hardhat/console.sol";
 
 import "./libraries/Base64.sol";
 
@@ -13,16 +14,16 @@ contract PkYellowNft is ERC721URIStorage {
 
 	mapping(address => uint256) private _mintPerAddress;
 	uint256 public MAX_PER_ADDRESS = 2;
-	uint256 public MAX_MINT = 100;
+	uint256 public MAX_MINT = 250;
 	uint256 public publicIssued = 0;
 
 	string baseSvg =
-		'<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350"><style>.base { font-size: 18px; } .bold { font-weight: bold; text-transform: uppercase; }</style><rect width="100%" height="100%" fill="white" stroke="';
+		'<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350"><style>.base { font-size: 20px; font-weight: bold; text-transform: uppercase; }</style><rect width="100%" height="100%" fill="white" stroke="';
 	string moreSvg =
-		'" stroke-width="30" /><text x="50%" y="70%" class="base bold" text-anchor="middle">Level ';
+		'" stroke-width="30" /><text x="50%" y="70%" class="base" text-anchor="middle">';
 	string levelSvg =
-		'</text><text x="50%" y="78%" class="base" text-anchor="middle">';
-	string imageSvg = '</text><image href=" ';
+		'</text><text x="50%" y="78%" text-anchor="middle">Level ';
+	string imageSvg = '</text><image href="';
 	string endSvg =
 		'" height="100" width="100" transform="translate(125,110)"/></svg>';
 
@@ -33,9 +34,7 @@ contract PkYellowNft is ERC721URIStorage {
 		"Pikachu",
 		"Eevee"
 	];
-
-	string[] colors = ["#9BCC50", "#FD7D24", "#30A7D7", "#EED535", "#A4ACAF"];
-
+	string[] colors = ["#78C850", "#F08030", "#6890F0", "#F8D030", "#A8A878"];
 	string[] descriptions = [
 		"There is a plant seed on its back right from the day this Pokemon is born. The seed slowly grows larger.",
 		"It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
@@ -43,7 +42,6 @@ contract PkYellowNft is ERC721URIStorage {
 		"Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
 		"It has the ability to alter the composition of its body to suit its surrounding environment."
 	];
-
 	string[] images = [
 		"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoAgMAAADxkFD+AAAADFBMVEWM/1r///8ZGRkItTG7XGWLAAABLUlEQVQYlWMIhQMGCphRW+HM/NUwZlj//qlQ5gv7/U8hzLjF//f/gjCT+/+t/30VzPz3/9X6V0/BzL5Vq1avWgliVu0WDQ14dR/ETOF1YGCQdAIxCw4w8DMw8IGY8TwG9gceWF8FMiOabezPdfyeCmRG6Zzht5bQBzHj6hkO6EvYg5hFZQwM22/wg5gp/wQY/p/gBpvLoMTAwMAFZlodeLWawQ5sxftX/18d0AGZG7f8//9vawxA2mrW////a0PDViBzE9+qVasOMfwEMh+sARrwhuFkKEOYAvOqVesZjA+BmB+s//+wZ/oEZP74w/f/zX+mf0C1O2z4/j/4ww/Sto4ByGSwfglkZjVorlrD8GopkDnz1a3QsnNpINuqlr0NjUtbCw6SSGB4zUQNdQAmya3Mqj7AMgAAAABJRU5ErkJggg==",
 		"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoAgMAAADxkFD+AAAADFBMVEX/AAD///8ZGRn/jACzVFtxAAABT0lEQVQYlTXQv0vDUBAH8COg+APJlMWlVQmULk6dLM0qLi1pLhGq2M1FdPAPKAjOwSE4SumiXdo/QDBVinUondxdAm6+xqWFZ897j/SGx4fjy+PuAPGojboAPUdGGWvkJBkb8m2esUq2ZJwyi2F7wbxG8MtUUN0YoU40IkuzsfFIxL/Fn1Dbfgo1LfC63Q4HAmEBFvIFGuKZKAHu/bxS4ubECrj7FFMSPogxVHu0Ofk2cr8DuNz564UTcU8DqMdpxaRFQFPwRGeUI6Hoy2IpoHWkMWB/CwNpY5P/bdqIIsJnntflsdLocKHW5Flo1Zkykdn6MueKHGjNzOGyOzOTLNuaORGzPkSUUNF34NtQOlW8GjDlraLzgYHeGfAlRo+kpmNYJxRrXkAvFWAprhnuTdlQRz2WBvqO5nnfQC/NK7rdNvrvBzqryr6LlnR3+fkHj6G+GzUv8NsAAAAASUVORK5CYII=",
@@ -54,7 +52,10 @@ contract PkYellowNft is ERC721URIStorage {
 
 	event NewMint(address indexed from, uint256 tokenId);
 
-	constructor() ERC721("PkYellowNft", "PKYELLOW") {}
+	constructor() ERC721("PK Yellow NFT", "PKYELLOW") {
+		// start at 1
+		_tokenIds.increment();
+	}
 
 	function mintPokemon() public {
 		require(
@@ -66,7 +67,9 @@ contract PkYellowNft is ERC721URIStorage {
 		uint256 newItemId = _tokenIds.current();
 
 		uint256 starterIndex = pickStarterPokemon(newItemId);
-		uint256 starterLevel = pickStarterLevel(newItemId);
+		string memory starterLevel = Strings.toString(
+			pickStarterLevel(newItemId)
+		);
 
 		string memory svg = string(
 			abi.encodePacked(
@@ -81,6 +84,9 @@ contract PkYellowNft is ERC721URIStorage {
 				endSvg
 			)
 		);
+
+		console.log(svg);
+		console.log("---");
 
 		string memory json = Base64.encode(
 			bytes(
