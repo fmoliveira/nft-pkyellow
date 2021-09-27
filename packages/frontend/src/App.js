@@ -29,7 +29,7 @@ export default function App() {
 						<img src="/android-chrome-192x192.png" alt="" />
 					</div>
 					<p className="header gradient-text">PK Yellow NFT</p>
-					<p className="sub-text">Grab your starter Pokemon today.</p>
+					<p className="sub-text">Grab your starter Pokémon today.</p>
 					<div className="opensea-container">
 						<a
 							className="opensea-link"
