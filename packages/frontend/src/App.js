@@ -18,6 +18,7 @@ export default function App() {
 		writeLoading,
 		connectWallet,
 		mintLimit,
+		mintedToken,
 		mintNft,
 	} = useWallet();
 
@@ -58,6 +59,7 @@ export default function App() {
 						loading={writeLoading}
 						disabled={!isRinkeby}
 					/>
+					<MintStatus token={mintedToken} />
 				</div>
 				<div className="footer-container footer-text">
 					<img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
@@ -100,6 +102,7 @@ const Wallet = ({ account, networkName, isRinkeby, connect }) => {
 				<span className="green-dot" />
 				<span>Wallet Connected</span>
 			</div>
+			<div>Account: {account}</div>
 			<div
 				className={classNames(
 					"network",
@@ -154,6 +157,31 @@ const MintButton = ({ account, mint, loading, disabled }) => {
 		</button>
 	);
 };
+
+function MintStatus({ token }) {
+	if (!token) {
+		return null;
+	}
+
+	return (
+		<div>
+			<p className="congrats">
+				Congrats! You've minted the token #{token.tokenId}.
+			</p>
+			<p>
+				<a
+					className="nft-link"
+					href={token.tokenUrl}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Click here to view it on OpenSea. It takes around to 5-10 minutes for
+					it to show up.
+				</a>
+			</p>
+		</div>
+	);
+}
 
 function Spinner() {
 	return (

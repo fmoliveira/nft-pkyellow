@@ -122,6 +122,15 @@
 	justify-content: center;
 }
 
+.congrats {
+	background: -webkit-linear-gradient(left, #f3d77b 30%, #6ee7b7 60%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
 .opensea-link {
 	display: flex;
 	align-items: center;
@@ -135,8 +144,15 @@
 	text-decoration: underline;
 }
 
-.opensea-button {
-	background-color: rgb(32, 129, 226);
+.nft-link {
+	gap: 1em;
+	color: white;
+	text-decoration: none;
+}
+
+.nft-link:hover {
+	color: #ff6fdf;
+	text-decoration: underline;
 }
 
 .mint-count {

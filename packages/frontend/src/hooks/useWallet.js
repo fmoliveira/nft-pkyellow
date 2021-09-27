@@ -1,9 +1,11 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { ethers } from "ethers";
 
-import wavePortalAbi from "@pkyellow/contract/rinkeby/abi.json";
+import contractAbi from "@pkyellow/contract/rinkeby/abi.json";
 import contractAddress from "@pkyellow/contract/rinkeby/address.json";
 import useWindowFocus from "./useWindowFocus";
+
+const OPENSEA_ASSETS_URL = " https://testnets.opensea.io/assets";
 
 export const WriteStatus = {
 	None: 0,
@@ -31,6 +33,7 @@ export default function useWallet() {
 	const [walletAccount, setAccount] = useState("");
 	const [walletError, setWalletError] = useState(null);
 	const [mintLimit, setMintLimit] = useState(null);
+	const [mintedToken, setMintedToken] = useState(null);
 
 	const networkName = useMemo(() => {
 		if (!walletNetwork) {
@@ -45,6 +48,17 @@ export default function useWallet() {
 	const updateValues = useCallback(async () => {
 		setMintLimit(await getMintLimit());
 	}, [setMintLimit]);
+
+	useEffect(() => {
+		subscribeToMintEvents(async (from, tokenId) => {
+			updateValues();
+			const connectedAccount = await getAccount();
+			if (from.toUpperCase() === connectedAccount.toUpperCase()) {
+				const tokenUrl = `${OPENSEA_ASSETS_URL}/${contractAddress}/${tokenId}`;
+				setMintedToken({ tokenId, tokenUrl });
+			}
+		});
+	}, [updateValues]);
 
 	useEffect(() => {
 		if (isWindowFocused) {
@@ -73,6 +87,8 @@ export default function useWallet() {
 	};
 
 	const mintNft = async () => {
+		setMintedToken(null);
+
 		if (!walletInstalled) {
 			return;
 		}
@@ -90,7 +106,6 @@ export default function useWallet() {
 
 				await transaction.wait();
 				setWriteLoading(WriteStatus.None);
-				updateValues();
 			})
 			.catch((error) => {
 				window.alert("Failed to mint NFT!");
@@ -107,6 +122,7 @@ export default function useWallet() {
 		walletAccount,
 		walletError,
 		mintLimit,
+		mintedToken,
 		connectWallet,
 		networkName,
 		isRinkeby,
@@ -124,8 +140,20 @@ async function getWalletConnected() {
 	}
 
 	const accountList = await window.ethereum.request({ method: "eth_accounts" });
-	console.log({ accountList });
 	return accountList.length !== 0;
+}
+
+async function getAccount() {
+	if (!window.ethereum) {
+		return null;
+	}
+
+	return window.ethereum
+		.request({ method: "eth_requestAccounts" })
+		.then((accountList) => {
+			const [firstAccount] = accountList;
+			return firstAccount;
+		});
 }
 
 function getNetwork() {
@@ -141,7 +169,7 @@ async function getMintLimit() {
 	const provider = new ethers.providers.Web3Provider(window.ethereum);
 	const contract = new ethers.Contract(
 		contractAddress,
-		wavePortalAbi.abi,
+		contractAbi.abi,
 		provider,
 	);
 
@@ -156,9 +184,26 @@ function mintPokemonNft() {
 	const signer = provider.getSigner();
 	const contract = new ethers.Contract(
 		contractAddress,
-		wavePortalAbi.abi,
+		contractAbi.abi,
 		signer,
 	);
 
 	return contract.mintPokemon();
+}
+
+function subscribeToMintEvents(callback) {
+	if (!window.ethereum) {
+		return;
+	}
+
+	const provider = new ethers.providers.Web3Provider(window.ethereum);
+	const wavePortalContract = new ethers.Contract(
+		contractAddress,
+		contractAbi.abi,
+		provider,
+	);
+
+	wavePortalContract.on("NewMint", (from, tokenId) => {
+		callback(from, tokenId.toString());
+	});
 }
