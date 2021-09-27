@@ -7,8 +7,7 @@ import useWallet from "./hooks/useWallet";
 import "./styles/spinner.css";
 import "./styles/App.css";
 
-const OPENSEA_LINK =
-	"https://testnets.opensea.io/collection/pkyellownft-qgtx2pi3yp";
+const OPENSEA_LINK = "https://testnets.opensea.io/collection/pk-yellow-nft";
 
 export default function App() {
 	const {
