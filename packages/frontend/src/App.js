@@ -62,8 +62,8 @@ export default function App() {
 				</div>
 				<div className="footer-container footer-text">
 					<div className="footer-row">
-						This is a no-profit fan project running on testnet. All Pokémon™
-						images are property of Nintendo<sup>&copy;</sup>.
+						All Pokémon™ character names and images are property of Nintendo
+						<sup>&copy;</sup>.
 					</div>
 					<div className="footer-row">
 						<img
