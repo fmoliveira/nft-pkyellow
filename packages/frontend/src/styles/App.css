@@ -163,6 +163,7 @@
 
 .footer-container {
 	display: flex;
+	gap: 0.25em;
 	flex-direction: column;
 	padding-bottom: 30px;
 }
@@ -170,12 +171,18 @@
 .footer-row {
 	display: flex;
 	justify-content: center;
+	gap: 0.5em;
 	align-items: center;
 }
 
+.opensea-logo {
+	width: 32px;
+	height: 32px;
+}
+
 .twitter-logo {
-	width: 35px;
-	height: 35px;
+	width: 24px;
+	height: 24px;
 }
 
 .footer-text {

@@ -45,7 +45,7 @@ export default function App() {
 						>
 							<img
 								alt="OpenSea Logo"
-								className="twitter-logo"
+								className="opensea-logo"
 								src={openSeaLogo}
 							/>
 							<span>View collection on OpenSea</span>
@@ -68,8 +68,8 @@ export default function App() {
 				</div>
 				<div className="footer-container footer-text">
 					<div className="footer-row">
-						All Pokémon™ character names and images are property of Nintendo
-						<sup>&copy;</sup>.
+						All Pokémon™ character names and images are property of
+						Nintendo&copy;.
 					</div>
 					<div className="footer-row">
 						<img
@@ -77,23 +77,9 @@ export default function App() {
 							className="twitter-logo"
 							src={twitterLogo}
 						/>
-						built by&nbsp;
-						<a
-							className="footer-text"
-							href=" https://twitter.com/tfmoliveira"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<span>built by</span>
+						<a className="footer-text" href="https://twitter.com/tfmoliveira">
 							@tfmoliveira
-						</a>
-						&nbsp;with&nbsp;
-						<a
-							className="footer-text"
-							href=" https://twitter.com/_buildspace"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							@_buildspace
 						</a>
 					</div>
 				</div>
