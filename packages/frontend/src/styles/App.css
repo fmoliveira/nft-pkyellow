@@ -163,9 +163,14 @@
 
 .footer-container {
 	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+}
+
+.footer-row {
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 30px;
 }
 
 .twitter-logo {

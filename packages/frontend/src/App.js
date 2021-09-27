@@ -61,25 +61,35 @@ export default function App() {
 					<MintStatus token={mintedToken} />
 				</div>
 				<div className="footer-container footer-text">
-					<img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
-					built by&nbsp;
-					<a
-						className="footer-text"
-						href=" https://twitter.com/tfmoliveira"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						@tfmoliveira
-					</a>
-					&nbsp;with&nbsp;
-					<a
-						className="footer-text"
-						href=" https://twitter.com/_buildspace"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						@_buildspace
-					</a>
+					<div className="footer-row">
+						This is a no-profit fan project running on testnet. All Pokémon™
+						images are property of Nintendo<sup>&copy;</sup>.
+					</div>
+					<div className="footer-row">
+						<img
+							alt="Twitter Logo"
+							className="twitter-logo"
+							src={twitterLogo}
+						/>
+						built by&nbsp;
+						<a
+							className="footer-text"
+							href=" https://twitter.com/tfmoliveira"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							@tfmoliveira
+						</a>
+						&nbsp;with&nbsp;
+						<a
+							className="footer-text"
+							href=" https://twitter.com/_buildspace"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							@_buildspace
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
