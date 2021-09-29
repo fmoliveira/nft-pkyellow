@@ -5,6 +5,9 @@
 	"author": "Filipe Oliveira <hi@fmoliveira.dev>",
 	"license": "MIT",
 	"private": true,
+	"scripts": {
+		"test": "npx hardhat test"
+	},
 	"devDependencies": {
 		"@nomiclabs/hardhat-ethers": "^2.0.2",
 		"@nomiclabs/hardhat-waffle": "^2.0.1",
