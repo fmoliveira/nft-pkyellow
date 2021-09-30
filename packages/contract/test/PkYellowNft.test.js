@@ -14,14 +14,14 @@ describe("PkYellowNft", () => {
 
 	it("mints first token with id #1", async () => {
 		await contract.mintPokemon();
-		const publicIssued = await contract.publicIssued();
+		const publicIssued = await contract.getTotalIssued();
 		expect(publicIssued).to.equal(1);
 	});
 
 	it("minting is capped to 2 tokens per address", async () => {
 		await contract.mintPokemon();
 		await contract.mintPokemon();
-		const publicIssued = await contract.publicIssued();
+		const publicIssued = await contract.getTotalIssued();
 		expect(publicIssued).to.equal(2);
 
 		await expect(contract.mintPokemon()).to.be.revertedWith(
@@ -37,7 +37,7 @@ describe("PkYellowNft", () => {
 		await contract.connect(otherWallet).mintPokemon();
 		await contract.connect(otherWallet).mintPokemon();
 
-		const publicIssued = await contract.publicIssued();
+		const publicIssued = await contract.getTotalIssued();
 		expect(publicIssued);
 	});
 });

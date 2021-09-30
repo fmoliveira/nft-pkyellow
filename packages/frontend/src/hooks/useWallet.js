@@ -173,7 +173,7 @@ async function getMintLimit() {
 		provider,
 	);
 
-	const issued = await contract.publicIssued();
+	const issued = await contract.getTotalIssued();
 	const max = await contract.MAX_MINT();
 
 	return { issued: issued.toString(), max: max.toString() };
