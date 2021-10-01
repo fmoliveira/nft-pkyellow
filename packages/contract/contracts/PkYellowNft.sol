@@ -122,7 +122,7 @@ contract PkYellowNft is ERC721URIStorage {
 
 		Pokemon memory starterInfo = pokemonAttributes[starterIndex];
 		string memory svg = encodeSvg(starterIndex, starterLevel);
-		string memory tokenUri = encodeJson(starterInfo, svg);
+		string memory tokenUri = encodeJson(starterInfo, starterLevel, svg);
 
 		tokenIdToPokemonIndex[newItemId] = starterIndex;
 		tokenIdToPokemonLevel[newItemId] = starterLevel;
@@ -156,11 +156,11 @@ contract PkYellowNft is ERC721URIStorage {
 		return svg;
 	}
 
-	function encodeJson(Pokemon memory pokemonInfo, string memory svg)
-		internal
-		pure
-		returns (string memory)
-	{
+	function encodeJson(
+		Pokemon memory pokemonInfo,
+		uint256 level,
+		string memory svg
+	) internal pure returns (string memory) {
 		string memory json = Base64.encode(
 			bytes(
 				string(
@@ -172,7 +172,19 @@ contract PkYellowNft is ERC721URIStorage {
 						'", "image": "data:image/svg+xml;base64,',
 						// We add data:image/svg+xml;base64 and then append our base64 encode our svg.
 						Base64.encode(bytes(svg)),
-						'"}'
+						'",',
+						// attributes
+						'"attributes": [',
+						'{ "trait_type": "Primary Type", "value": "',
+						pokemonInfo.primaryType,
+						'" }',
+						"],",
+						// traits
+						'"traits": [',
+						'{ "trait_type": "Level", "value": ',
+						Strings.toString(level),
+						" }]",
+						"}"
 					)
 				)
 			)

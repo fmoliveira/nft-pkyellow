@@ -8,6 +8,8 @@
 	"scripts": {
 		"start": "npx hardhat run scripts/run.js",
 		"buidl": "npx hardhat compile",
+		"deploy:rinkeby": "npx hardhat run scripts/deploy.js --network rinkeby",
+		"deploy": "yarn buidl && yarn deploy:rinkeby",
 		"pretest": "yarn buidl",
 		"test": "mocha"
 	},

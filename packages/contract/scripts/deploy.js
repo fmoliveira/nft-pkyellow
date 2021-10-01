@@ -7,6 +7,9 @@ async function deploy() {
 	await contract.deployed();
 	console.log("Contract deployed to:", contract.address);
 
+	let txn = await contract.mintPokemon();
+	await txn.wait();
+
 	fs.writeFileSync("contract-address.json", JSON.stringify(contract.address));
 
 	exec("mkdir -p rinkeby");

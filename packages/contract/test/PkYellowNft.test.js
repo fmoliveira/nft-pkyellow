@@ -44,10 +44,20 @@ describe("PkYellowNft", () => {
 	it("finds pokemon attributes in token uri", async () => {
 		await contract.mintPokemon();
 		const tokenUri = await contract.tokenURI(1);
+
 		const decodedToken = decodeTokenUri(tokenUri);
 		expect(decodedToken.name).to.exist;
 		expect(decodedToken.description).to.exist;
 		expect(decodedToken.image).to.exist;
+		expect(decodedToken.attributes).to.exist;
+
+		const [primaryType] = decodedToken.attributes;
+		expect(primaryType.trait_type).to.equal("Primary Type");
+		expect(primaryType.value).to.exist;
+
+		const [level] = decodedToken.traits;
+		expect(level.trait_type).to.equal("Level");
+		expect(level.value).to.exist;
 	});
 });
 
