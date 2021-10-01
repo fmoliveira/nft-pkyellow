@@ -40,4 +40,19 @@ describe("PkYellowNft", () => {
 		const publicIssued = await contract.getTotalIssued();
 		expect(publicIssued);
 	});
+
+	it("finds pokemon attributes in token uri", async () => {
+		await contract.mintPokemon();
+		const tokenUri = await contract.tokenURI(1);
+		const decodedToken = decodeTokenUri(tokenUri);
+		expect(decodedToken.name).to.exist;
+		expect(decodedToken.description).to.exist;
+		expect(decodedToken.image).to.exist;
+	});
 });
+
+function decodeTokenUri(tokenUri) {
+	const [, payload] = tokenUri.split(",");
+	const decoded = Buffer.from(payload, "base64").toString();
+	return JSON.parse(decoded);
+}

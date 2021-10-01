@@ -6,6 +6,9 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
+		"start": "npx hardhat run scripts/run.js",
+		"buidl": "npx hardhat compile",
+		"pretest": "yarn buidl",
 		"test": "mocha"
 	},
 	"devDependencies": {
